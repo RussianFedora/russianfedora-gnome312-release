@@ -11,8 +11,6 @@ URL:            http://russianfedora.pro
 Source0:	russianfedora-%{repo}-x86_64.repo
 Source1:        russianfedora-%{repo}-i386.repo
 
-BuildArch:      noarch
-
 Requires:       system-release >= %{version}
 
 %description
@@ -30,7 +28,7 @@ install -d -m755 \
   $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 
 # Yum .repo files
-%if %(uname -m) == "x86_64"
+%ifarch x86_64
 %{__install} -p -m644 %{SOURCE0} \
     $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d/russianfedora-%{repo}.repo
 %else
