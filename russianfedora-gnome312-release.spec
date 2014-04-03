@@ -2,7 +2,7 @@
 
 Name:           russianfedora-%{repo}-release
 Version:        20
-Release:        1.R
+Release:        2.R
 Summary:        Russian Fedora (%{repo}) Repository Configuration
 
 Group:          System Environment/Base
@@ -42,5 +42,8 @@ install -d -m755 \
 
 
 %changelog
+* Thu Apr  3 2014 Arkady L. Shane <ashejn@russianfedora.ru> - 20-2.R
+- build both arch
+
 * Thu Apr  3 2014 Arkady L. Shane <ashejn@russianfedora.ru> - 20-1.R
 - initial build
