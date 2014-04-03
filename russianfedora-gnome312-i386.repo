@@ -1,0 +1,8 @@
+[russianfedora-gnome312-i386]
+name=Addons to Copr repo for f20-gnome-3-12 owned by rhughes (i386)
+baseurl=http://koji.russianfedora.pro/kojifiles/repos/rfr20-gnome-build/latest/i386/
+skip_if_unavailable=True
+metadata_expire=1800
+gpgcheck=0
+cost=900
+enabled=1
